@@ -2,9 +2,9 @@
 layout: post
 ---
 {% include JB/setup %}
-```html
+{% highlight html %} 
 由于新项目服务端方面没这么忙，老大也让我学起客户端来。这也就上了andorid官网学习起andoird来了
-```
+{% endhighlight %}
 
 ## 1.AndroidManifest.xml
 
@@ -18,7 +18,7 @@ layout: post
 
 Note: Because they can be long-running, be sure that you call getWritableDatabase() or getReadableDatabase() in a background thread, such as with AsyncTask or IntentService
 
-```java
+{% highlight java %} 
 /**BaseColumns 接口
 一般可以写个内部类实现这个接口，里面定义一些数据库的表名，列名。方便使用，防止在使用过程中拼写错误*/
 public static abstract class FeedEntry implements BaseColumns{
@@ -27,7 +27,7 @@ public static abstract class FeedEntry implements BaseColumns{
         public static final String COL_NAME_TITLE = "title";
         public static final String COL_NAME_SUBTITLE = "subtitle";
     }
-```
+{% endhighlight %}
 
 ## 3.android.content.Context 
 
