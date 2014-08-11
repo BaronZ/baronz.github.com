@@ -15,13 +15,13 @@ When an activity is stopped because a new activity starts, it is notified of thi
 
 ### 1.1  back stack 后退栈 (先进后出)([ ]表示栈)
 
-| Step        | Stack           
+| Step        | Stack           |                
 | ------------- |:-------------:|
-| 应用启动显示Activity_1,栈会插入Activity_1| [Activity_1]  
-| 跳到Activity_2,栈插入Activity_2|[Activity_1,Activity_2]  
-| 跳转到Activity_3,栈插入Activity_3|[Activity_1,Activity_2,Activity_3]       
-| 按返回键，Activity_3会从back stack中弹出，并且被销毁，Activity_2会继续(resume)| [Activity_1,Activity_2]         
-　　
+| 应用启动显示Activity_1,栈会插入Activity_1      | [Activity_1] |
+| 跳到Activity_2,栈插入Activity_2      | [Activity_1,Activity_2]     |
+| 跳转到Activity_3,栈插入Activity_3 | [Activity_1,Activity_2,Activity_3]      |
+| 按返回键，Activity_3会从back stack中弹出，并且被销毁，Activity_2会继续(resume) | [Activity_1,Activity_2]      |
+
 
 ### 总结 ###
 Activity一显示，就会被压到栈中，一按返回按钮，就会被弹出栈，栈先进后出。应用只显示栈顶的Activity
