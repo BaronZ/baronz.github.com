@@ -1,7 +1,15 @@
 ---
 layout: post
+title: 跟着android官网学android
+tags: [android, sqlite]
+image:
+  feature: abstract-3.jpg
+  credit: dargadgetz
+  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+comments: true
+share: true
 ---
-{% include JB/setup %}
+
 {% highlight html %} 
 由于新项目服务端方面没这么忙，老大也让我学起客户端来。这也就上了andorid官网学习起andoird来了
 {% endhighlight %}
