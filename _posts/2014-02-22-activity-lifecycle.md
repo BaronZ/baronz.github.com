@@ -55,7 +55,7 @@ share: true
 
 <figure>
 	<figcaption>Activity生命周期图</figcaption>
-	<a href="{{ site.url }}/images/activity_lifecycle.png"><img src="{{ site.url }}/images/activity_lifecycle.png" alt=""></a>
+	<a href="{{ site.url }}/images/blog/activity_lifecycle.png"><img src="{{ site.url }}/images/blog/activity_lifecycle.png" alt=""></a>
 	
 </figure>
 　　
