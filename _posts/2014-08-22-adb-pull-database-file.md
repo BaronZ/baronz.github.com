@@ -20,7 +20,7 @@ share: true
 ###3. 执行下面命令行，复制xxx.db到F:/dest
 
 {% highlight ruby %}
-adb pull /data/data/[package name]/xxx.db F:\dest
+adb pull /data/data/[package name]/databases/xxx.db F:\dest
 {% endhighlight %}
 
 ###4. 是的，这一步正常来说就要报错了，原因是权限不够
