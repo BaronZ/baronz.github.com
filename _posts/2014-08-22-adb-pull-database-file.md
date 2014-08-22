@@ -11,7 +11,11 @@ comments: true
 share: true
 ---
 
-本文介绍如何在把android系统上的数据文件复制到电脑上，步骤如下
+本文介绍如何在把android系统上的数据文件复制到电脑上。
+
+当然，前提是你的手机要`root`了
+
+步骤如下:
 
 ###1. win+r cmd进入命令行
 
