@@ -2,7 +2,7 @@
 layout: post
 title: "adb pull命令复制android数据库文件.db到电脑"
 
-tags: [android, activity, activity-lifecycle]
+tags: [android, adb-shell, sqlite]
 image:
   feature: abstract-6.jpg
   credit: dargadgetz
