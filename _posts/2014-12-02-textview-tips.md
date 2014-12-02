@@ -26,7 +26,8 @@ textview.getPaint().setFlags(Paint. STRIKE_THRU_TEXT_FLAG);
 {% endhighlight %}
 ###android:onClick 设置无效
 需要设置属性android:clickable="true"
-###This tag and its children can be replaced by one <TextView/> and a compound drawable
+
+###This tag and its children can be replaced by one TextView and a compound drawable
 当我们用一个LinearLayout来实现一个ImageView和TextView在一起的时候，就会出现上面的提示。
 
 根据提示来修改，可以使用TextView的drawableLeft等属性，代码如下
