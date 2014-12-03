@@ -4,10 +4,6 @@ title: "adb pull命令复制android数据库文件.db到电脑"
 
 tags: [android, adb-shell, sqlite]
 categories: articles
-image:
-  feature: abstract-6.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 comments: true
 share: true
 ---

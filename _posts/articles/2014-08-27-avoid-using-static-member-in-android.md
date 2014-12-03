@@ -4,10 +4,6 @@ title: "Android中少用静态变量(Android静态变量static生命周期)"
 
 tags: [android, static-lifecycle, process, memory]
 categories: articles
-image:
-  feature: abstract-7.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 comments: true
 share: true
 ---

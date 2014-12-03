@@ -4,10 +4,6 @@ title: "TextView使用笔记"
 
 tags: [android, textview]
 categories: articles
-image:
-  feature: abstract-8.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 comments: true
 share: true
 ---

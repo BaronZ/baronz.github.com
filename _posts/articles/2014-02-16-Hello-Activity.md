@@ -3,10 +3,6 @@ layout: post
 title: 跟着Android官网学习Activity
 tags: [android, activity]
 categories: articles
-image:
-  feature: abstract-1.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 comments: true
 share: true
 ---
