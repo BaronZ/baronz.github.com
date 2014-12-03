@@ -1,75 +1,53 @@
-title:            Baron's Blog
-description:      Describe your website here.
-disqus_shortname: baronz
-reading_time:     true
-words_per_minute: 200
-#Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://baronz.github.io
+# Site wide configuration
 
-# Owner/author information
-owner:
-  name:           Baron Zeng
-  avatar:         avatar.jpg
-  bio:            "安卓开发人员，业余时间帮老婆卖水晶"
-  email:          realbo89@outlook.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        baron89
-  facebook:       realbo89@hotmail.com
-  github:         BaronZ
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  # google plus id, include the '+', eg +mmistakes
-  # google_plus:    +yourid
+title: Baron's blog
+locale: en_US
+description: Welcome to my blog
+logo: site-logo.png
+search: true
+url: 
 
-# Background image to be tiled on all pages
-background: witewall_3.png
 
-# Analytics and webmaster tools stuff goes here
-# google_analytics: 
-analytics :
-    provider : custom  
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+# Jekyll configuration
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-#  - title: Theme Setup
-#    url: /theme-setup
-  - title: 我的淘宝店铺
-    url: http://jiayi8889.taobao.com
-    external: true
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-highlighter: pygments
-markdown:    kramdown
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
-
-# Amount of post to show on home page
-paginate: 5
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
 
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: true
-
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+  use_coderay: false
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Baron Zeng
+  avatar: bio-photo-2.jpg
+  email: realbo89@outlook.com
+  disqus-shortname:
+  twitter: realbo89
+  facebook: #username
+  github: baronz
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot: 
+  bing-verify:
