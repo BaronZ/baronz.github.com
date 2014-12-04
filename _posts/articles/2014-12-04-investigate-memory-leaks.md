@@ -7,7 +7,7 @@ categories: articles
 comments: true
 share: true
 ---
-大家应该试过把一个Handler写成一个内部类。如果这个内部类不是静态的话，Eclipse会有一个警告
+大家应该试过把一个Handler写成一个内部类。如果这个内部类不是静态的话，Eclipse会有一个警告`This Handler class should be static or leaks might occur`。就是说如果这个内部类不声明成静态的，有可能导致内存泄露，代码如下。
 
 {% highlight java %}
 public class TestActivity extends Activity{
@@ -21,9 +21,6 @@ public class TestActivity extends Activity{
 }
 {% endhighlight %}
 
-警告如下：
->This Handler class should be static or leaks might occur
-就是说如果这个内部类不声明成静态的，有可能导致内存泄露。
 
 Eclipse也对这个警告做了解释
 
