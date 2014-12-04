@@ -61,9 +61,11 @@
           {% endif %}
         </nav><!-- /.pagination -->
         {% if site.owner.disqus-shortname and page.comments == true %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
+		{% include duoshuo-comment.html %} 
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
   </article>
+  
 </div><!-- /#main -->
 
 <div class="footer-wrapper">
@@ -74,5 +76,6 @@
 
 {% include scripts.html %}	        
 {% include bd_stats.html %} 
+
 </body>
 </html>
