@@ -2,7 +2,7 @@
 layout: post
 title: "This Handler class should be static or leaks might occur"
 
-tags: [android, memory, memory-leaks]
+tags: [android, activity, handler, looper, message-queue, memory, memory-leaks]
 categories: articles
 comments: true
 share: true
