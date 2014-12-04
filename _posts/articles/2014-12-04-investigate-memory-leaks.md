@@ -12,9 +12,9 @@ share: true
 {% highlight java %}
 public class TestActivity extends Activity{
 	@Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
 	}
 	private class LeakHandler extends Handler{
 	}
@@ -42,9 +42,9 @@ Eclipse也对这个警告做了解释
 protected void onCreate(Bundle savedInstanceState) {
 	super.onCreate(savedInstanceState);
 	mLeakyHandler.postDelayed(new Runnable() {
-    	@Override
-      	public void run() { }
-    }, 60 * 10 * 1000);
+		@Override
+		public void run() { }
+	}, 60 * 10 * 1000);
 	finish();
 }
 {% endhighlight %}
@@ -64,12 +64,11 @@ public class TestActivity extends Activity{
 	private WeakReference<StaticHandler> mHandlerRef;
 
 	@Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-	
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
 		mHandlerRef = new WeakReference(new StaticHandler(mContext));
-	｝
+	}
 	private static class StaticHandler extends Handler{
 		//这里的Context是引用外部类的context,所以要声明成弱引用
 		private WeakReference<Context> mContextRef; 
