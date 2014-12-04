@@ -2,7 +2,7 @@
 layout: post
 title: "This Handler class should be static or leaks might occur"
 
-tags: [android, activity, handler, looper, message-queue, memory, memory-leaks]
+tags: [android, activity, handler, looper, message-queue, memory, memory-leaks, weakreference]
 categories: articles
 comments: true
 share: true
@@ -29,11 +29,12 @@ Eclipse也对这个警告做了解释
 上面的解释大概意思就是如果Handler使用的不是主线程(MainThread)的Looper 或者 MessageQueue，那么不声明成static的内部类没问题。但是如果使用的是主线程的Looper或者MessageQueue，那么，你必须把你的内部类声明成静态的，并且在外部类，把这个类声明成弱引用。Handler里面的成员变量，如果有引用到外部类的成员变量，全部声明成弱引用
 
 那么为什么Handler使用主线程的Looper就会导致内存泄露呢？
-为什么要声明成静态内部类呢？
+为什么要声明成静态内部类呢？为什么要声明成弱引用对象呢？
 
 1. 当一个安卓应用启动的时候，会为这个应用的主线程创建一个Looper对象。这个Looper对象里面有一个MessageQueue对象。当我们每次触发一个事件(比如点击事件，activity生命周期的回调)，就会往主线程的Looper的MessageQueue里添加message,然后Looper会一个接一个处理queue里面的message。这个主线程的Looper的生命周期与应用的生命周期一样长。
 2. 当你的Handler是在主线程里初始化的，并且没有指定Looper,那么这个Handler使用的就是主线程的Looper。当你的handler发送消息(eg:sendEmptyMessage)给这个Looper的MessageQueue的时候，Looper会持用这个Handler的引用，这样Looper处理这个handler发来的message的时候，android这个框架才能调用Handler.handleMessage(Message)
 3. 在java中，非静态内部类对外部类会有一个隐式的引用，而静态内部类则没有
+4. 在java中，当GC一触发的时候，不管内存是否足够，弱引用对象都会被垃圾回收
 
 假如，我们这么使用handler
 {% highlight java %}
