@@ -44,10 +44,10 @@ owner:
   instagram: #username
   flickr: #username
   tumblr: #username
-  google:
-    plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot: 
+#  google:
+#    plus: #username
+#    analytics:
+#    verify:
+#    ad-client:
+ #   ad-slot: 
   bing-verify:
