@@ -59,5 +59,7 @@ InputFilter
 ###11.不自动获取焦点
 EditText的父Layout中,加入下面的两个属性即可
 
+{% highlight xml %}
 android:focusable="true" 
 android:focusableInTouchMode="true
+{% endhighlight %}
